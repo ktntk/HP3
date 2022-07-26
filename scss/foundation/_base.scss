@@ -1,0 +1,73 @@
+@use "../global" as *;
+
+// 全体に対して===================================
+a {
+	list-style: none;
+	text-decoration: none;
+	color: #000;
+}
+
+li {
+	list-style: none;
+	text-decoration: none;
+}
+
+
+// header========================================
+.header_nav {
+	font-family: $fmintyo;
+	position: fixed;
+	right: 0%;
+  width:25%;
+	display: flex;
+	justify-content: space-between;
+  margin: 2% 3% 0 0;
+	z-index: 5;
+	font-weight: 500;
+	li :hover{
+		opacity: 0.2;
+	}
+}
+
+// footer=======================================
+.footer {
+	position: absolute;
+	width: 100%;
+	top: 90%;
+  left: 0;
+	color: #000;
+	font-family: 'Shippori Mincho',serif;
+	font-weight: 600;
+}
+
+
+// レスポンシブ===============================================
+@media screen and (max-width: 1024px) {
+.header_nav {
+		width: 30%;
+	}
+
+	.footer {
+		width: 100%;
+		top: 95%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+.header_nav {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+.header_nav {
+		width: 55%;
+		font-size: 12px;
+	}
+
+.footer {
+	font-size: 10px;
+	font-weight: 600;
+}
+}

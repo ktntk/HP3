@@ -1,0 +1,339 @@
+@use "foundation";
+@use "global" as *;
+
+// スライドショー======================================
+.top-slide_img {
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: slideAnime;
+          animation-name: slideAnime;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  display: block;
+  min-height: 100vh;
+  -o-object-fit: cover;
+    object-fit: cover;
+  opacity: 0;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+}
+
+.top-slide_item:nth-of-type(1) .top-slide_img {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.top-slide_item:nth-of-type(2) .top-slide_img {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+.top-slide_item:nth-of-type(3) .top-slide_img {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+.top-slide_item:nth-of-type(4) .top-slide_img {
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+}
+
+@-webkit-keyframes slideAnime {
+  0% {
+    opacity: 0;
+  }
+
+  16% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slideAnime {
+  0% {
+    opacity: 0;
+  }
+
+  16% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  49% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.top_title {
+  @include topttl;
+}
+
+.top_sub {
+  font-family: $fmintyo;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 5px;
+  margin-top: 2%;
+}
+
+.top-slide_item {
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+// ボタン=======================================
+.top_btn {
+  display: inline-block;
+  padding: 18px 60px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: 0.1px solid #fff;
+  color: #fff;
+  outline: none;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-top: 10%;
+  font-weight: lighter;
+  font-family: serif;
+}
+
+.top_btn_footer {
+  display: inline-block;
+  padding: 18px 60px;
+  border-radius: 30px;
+  text-decoration: none;
+  border: 0.1px solid #fff;
+  color: #fff;
+  outline: none;
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  margin-top: 26.5%;
+  font-weight: lighter;
+  font-family: serif;
+}
+
+.top_btn:hover,
+.top_btn_footer:hover {
+  border-color: transparent;
+  color: #fff;
+  background: -webkit-gradient(linear, right top, left top, from(#3838fd), color-stop(50%, #a6a0fc), to(#dfddfc));
+  background: -o-linear-gradient(right, #3838fd 0%, #a6a0fc 50%, #dfddfc 100%);
+  background: linear-gradient(270deg, #3838fd 0%, #a6a0fc 50%, #dfddfc 100%);
+  background-size: 200% auto;
+  background-position: right center;
+}
+
+// セクション====================================
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#box1 {
+  display: block;
+
+  h1 {
+    @include topttl;
+  }
+
+  h2 {
+    @include topsub;
+  }
+}
+
+#box2 {
+  position: relative;
+  background: url(../img/spring/sakura.jpg);
+  @include img;
+
+  h1 {
+    @include topttl;
+  }
+}
+
+#box3 {
+  position: relative;
+  background: url(../img/spring/haru.jpg);
+  @include img;
+
+  h1 {
+    @include topttl;
+  }
+}
+
+#box4 {
+  position: relative;
+  background: url(../img/summer/summer.jpg);
+  @include img;
+
+  h1 {
+    @include topttl;
+  }
+}
+
+#box5 {
+  position: relative;
+  background: url(../img/autumn/fall.jpg);
+  @include img;
+
+  h1 {
+    @include topttl;
+  }
+}
+
+#box6 {
+  display: block;
+  position: relative;
+  background: url(../img/winter/fuyu.jpg);
+  @include img;
+
+  h1 {
+    @include topttl;
+  }
+}
+
+// レイアウト====================================
+
+.top_box {
+  padding: 3%;
+  width: 220px;
+  height: 380px;
+  background-color: #FFF;
+  opacity: 0.7;
+  color: #000;
+  margin-right: 60%;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-bottom: 1%;
+    font-family: "Parisienne", cursive;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-bottom: 20%;
+  }
+}
+
+.text_box {
+  width: 90%;
+
+  h5 {
+    font-size: 1.1rem;
+    text-align: start;
+    font-weight: lighter;
+    font-family: 'Shippori Mincho', serif;
+    margin-bottom: 20%;
+  }
+
+  p {
+    text-align: start;
+    line-height: 2rem;
+    font-family: 'Shippori Mincho', serif;
+  }
+}
+
+
+// レスポンシブ===============================================
+@media screen and (max-width: 1024px) {
+.top_btn_footer {
+    margin-top: 80%;
+  }
+
+.top_box {
+  margin-right: 45%;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .top_btn_footer {
+    margin-top: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #box1 h1{
+    font-size: 28px;
+  }
+  
+  #box2 h1, #box3 h1, #box4 h1, #box5 h1, #box6 h1 {
+      font-size: 46px;
+    }
+
+.top_box {
+  padding: 10%;
+  width: 60%;
+  height: 380px;
+  margin: 0 auto;
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+.text_box {
+  width: 90%;
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.top_btn {
+  padding: 12px 50px;
+  border-radius: 30px;
+  margin-top: 30%;
+  font-size: 12px;
+}
+
+.top_btn_footer {
+  padding: 12px 50px;
+  border-radius: 30px;
+  font-size: 12px;
+  margin-top: 110%;
+}
+}
