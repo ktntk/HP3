@@ -17,7 +17,7 @@
 	transform: translate(-50%, -50%);
 	font-weight: lighter;
 	font-size: 5rem;
-	font-family: "Parisienne", cursive;
+	font-family: $fPari;
 }
 
 @mixin topsub {
@@ -26,4 +26,19 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	font-size: 1rem;
+}
+
+@mixin sliderttl {
+	font-family: $fPari;
+	font-weight: lighter;
+	font-size: 4rem;
+	margin: 0 0 4% 5%;
+}
+
+@mixin pagettl{
+	text-align: center;
+	font-size: 5rem;
+	font-weight: lighter;
+	font-family: $fPari;
+	margin-bottom: 5%;
 }

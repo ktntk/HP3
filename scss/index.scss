@@ -90,7 +90,7 @@
 }
 
 .top_sub {
-  font-family: $fmintyo;
+  font-family: $fMintyo;
   font-size: 20px;
   font-weight: lighter;
   letter-spacing: 5px;
@@ -258,14 +258,14 @@
     font-size: 1.1rem;
     text-align: start;
     font-weight: lighter;
-    font-family: 'Shippori Mincho', serif;
+    font-family: $fMintyo;
     margin-bottom: 20%;
   }
 
   p {
     text-align: start;
     line-height: 2rem;
-    font-family: 'Shippori Mincho', serif;
+    font-family: $fMintyo;
   }
 }
 

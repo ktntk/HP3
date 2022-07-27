@@ -1,0 +1,186 @@
+@use "foundation";
+@use "global" as *;
+
+// スライダー===========================================================
+.slider {
+  width: 88%;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 100%;
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.slider .slick-slide {
+  margin: 0 10px;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+// ドットナビゲーション===============================================
+.slick-dots {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+
+.slick-dots .slick-active button {
+  background: #000;
+}
+
+.season1 >ul> {
+  background: #fff;
+}
+
+// レイアウト===========================================
+main{
+  padding-top: 10%;
+}
+
+.page_ttl{
+  @include pagettl;
+}
+
+.spring {
+  @include sliderttl;
+  color: $cSpring;
+  }
+
+.summer {
+  @include sliderttl;
+  color: $cSummer;
+}
+
+.autumn {
+  @include sliderttl;
+  color: $cAutumn;
+}
+
+.winter {
+  @include sliderttl;
+  color: $cWinter;
+}
+
+.text_box{
+  width: 20.2vw;
+  height: 120px;
+  background-color: #fff;
+  opacity: 0.8;
+  box-shadow: 10px 10px 10px #ddd;
+  margin-bottom: 1%;
+  font-size: 1rem;
+  font-family: $fMintyo;
+  font-weight: lighter;
+  h3{
+    padding: 5%;
+  }
+  h4{
+    padding: 5%;
+  }
+}
+
+.footer {
+  position: relative;
+  padding: 10% 0 5% 0;
+  width: 100%;
+  color: #000;
+  font-family: $fMintyo;
+  font-weight: 600;
+  text-align: center;
+}
+
+// レスポンシブ===============================================
+@media screen and (max-width: 1024px) {
+.slider img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider img {
+    width: 40.5vw;
+    height: 200px;
+  }
+
+  .text_box {
+    width: 40.5vw;
+    height: 120px;
+  }
+
+  .page_ttl {
+    font-size: 3rem;
+  }
+
+  .spring, .summer, .autumn, .winter {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider img {
+    width: 60vw;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .text_box {
+    width: 60vw;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 1%;
+  }
+
+  .page_ttl {
+    font-size: 5rem;
+    margin-top: 5%;
+    margin-bottom: 20%;
+  }
+  
+  .spring,
+  .summer,
+  .autumn,
+  .winter {
+    font-size: 3.5rem;
+    margin: 15%;
+  }
+}

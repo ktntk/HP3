@@ -179,7 +179,7 @@ li {
   font-family: "Shippori Mincho", serif;
   position: fixed;
   right: 0%;
-  width: 25%;
+  width: 20%;
   display: flex;
   justify-content: space-between;
   margin: 2% 3% 0 0;
@@ -212,13 +212,13 @@ li {
 }
 @media screen and (max-width: 768px) {
   .header_nav {
-    width: 40%;
+    width: 30%;
   }
 }
 @media screen and (max-width: 480px) {
   .header_nav {
-    width: 55%;
-    font-size: 12px;
+    width: 40%;
+    font-size: 10px;
   }
   .footer {
     font-size: 10px;
