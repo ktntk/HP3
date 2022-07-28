@@ -1,0 +1,145 @@
+@use "foundation";
+@use "global" as *;
+
+body{
+  background: rgb(255, 255, 255);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(246, 214, 214, 1) 25%, rgba(245, 179, 187, 1) 50%, rgba(249, 141, 165, 1) 75%, rgba(233, 155, 156, 1) 100%);
+}
+
+main {
+  padding-top: 5%;
+}
+
+.box_inner{
+  background-color: #fff;
+  padding: 5%
+}
+
+.page_ttl {
+  @include pagettl;
+  margin-bottom: 5vh;
+}
+
+.form_box{
+  width: 60%;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.contact_box {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+.contact_box._area {
+  align-items: baseline;
+}
+
+.contact_form_box1,
+.contact_form_box2 {
+  height: 3vh;
+  width: 50%;
+  font-size: 1rem;
+  border: 1px solid #B1B1B1;
+  background-color: #ECECEC;
+}
+
+.contact_txtarea {
+  width: 50%;
+  height: 30vh;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #B1B1B1;
+  background-color: #ECECEC;
+}
+
+.contact_form_ttl {
+  width: 20%;
+  height: 100%;
+  margin-right: 10.5%;
+  margin-left: 10%;
+  font-size: 1.2rem;
+  font-family: serif;
+  position: relative;
+}
+
+btn{
+  margin-top: 5%;
+}
+
+.contact_btn {
+  width: 15%;
+  margin: 0 auto;
+  display: block;
+  background-color: black;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: serif;
+}
+
+
+.footer {
+  @include footer;
+  color: #fff;
+}
+
+// レスポンシブ===============================================
+@media screen and (max-width: 1024px) {
+  .contact_box{
+    margin-bottom: 5vh;
+  }
+
+
+  .contact_btn{
+    width: 20%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header_nav {
+      width: 40%;
+    }
+
+    .page_ttl{
+      font-size: 42px;
+    }
+
+    .contact_form_ttl{
+      font-size: 12px;
+    }
+
+    .footer{
+      margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  .header_nav {
+    width: 50%;
+  }
+
+  .page_ttl{
+    font-size: 32px;
+  }
+
+  .contact_form_ttl{
+    font-size: 10px;
+  }
+
+  .contact_btn{
+    width: 30%;
+  }
+
+  .footer{
+  padding: 10% 0 15% 0;
+  }
+}

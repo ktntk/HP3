@@ -193,8 +193,9 @@ li {
 .footer {
   position: absolute;
   width: 100%;
-  top: 90%;
+  top: 92%;
   left: 0;
+  font-size: 12px;
   color: #000;
   font-family: "Shippori Mincho", serif;
   font-weight: 600;
@@ -356,8 +357,9 @@ main {
 
 .footer {
   position: relative;
-  padding: 10% 0 5% 0;
+  margin: 5% 0 5% 0;
   width: 100%;
+  font-size: 12px;
   color: #000;
   font-family: "Shippori Mincho", serif;
   font-weight: 600;

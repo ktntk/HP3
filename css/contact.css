@@ -1,1 +1,367 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colors to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colors to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border color to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.header_nav {
+  font-family: "Shippori Mincho", serif;
+  position: fixed;
+  right: 0%;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 3% 0 0;
+  z-index: 5;
+  font-weight: 500;
+}
+.header_nav li :hover {
+  opacity: 0.2;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  top: 92%;
+  left: 0;
+  font-size: 12px;
+  color: #000;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .header_nav {
+    width: 30%;
+  }
+  .footer {
+    width: 100%;
+    top: 95%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header_nav {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header_nav {
+    width: 40%;
+    font-size: 10px;
+  }
+  .footer {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgb(246, 214, 214) 25%, rgb(245, 179, 187) 50%, rgb(249, 141, 165) 75%, rgb(233, 155, 156) 100%);
+}
+
+main {
+  padding-top: 5%;
+}
+
+.box_inner {
+  background-color: #fff;
+  padding: 5%;
+}
+
+.page_ttl {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: lighter;
+  font-family: "Parisienne", cursive;
+  margin-bottom: 5%;
+  margin-bottom: 5vh;
+}
+
+.form_box {
+  width: 60%;
+  height: 80vh;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.contact_box {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 2%;
+}
+
+.contact_box._area {
+  align-items: baseline;
+}
+
+.contact_form_box1,
+.contact_form_box2 {
+  height: 3vh;
+  width: 50%;
+  font-size: 1rem;
+  border: 1px solid #B1B1B1;
+  background-color: #ECECEC;
+}
+
+.contact_txtarea {
+  width: 50%;
+  height: 30vh;
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid #B1B1B1;
+  background-color: #ECECEC;
+}
+
+.contact_form_ttl {
+  width: 20%;
+  height: 100%;
+  margin-right: 10.5%;
+  margin-left: 10%;
+  font-size: 1.2rem;
+  font-family: serif;
+  position: relative;
+}
+
+btn {
+  margin-top: 5%;
+}
+
+.contact_btn {
+  width: 15%;
+  margin: 0 auto;
+  display: block;
+  background-color: black;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: serif;
+}
+
+.footer {
+  position: relative;
+  margin: 5% 0 5% 0;
+  width: 100%;
+  font-size: 12px;
+  color: #000;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact_box {
+    margin-bottom: 5vh;
+  }
+  .contact_btn {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header_nav {
+    width: 40%;
+  }
+  .page_ttl {
+    font-size: 42px;
+  }
+  .contact_form_ttl {
+    font-size: 12px;
+  }
+  .footer {
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header_nav {
+    width: 50%;
+  }
+  .page_ttl {
+    font-size: 32px;
+  }
+  .contact_form_ttl {
+    font-size: 10px;
+  }
+  .contact_btn {
+    width: 30%;
+  }
+  .footer {
+    padding: 10% 0 15% 0;
+  }
+}
