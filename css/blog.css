@@ -1,1 +1,329 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
 
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colors to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colors to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border color to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.header_nav {
+  font-family: "Shippori Mincho", serif;
+  position: fixed;
+  right: 0%;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 3% 0 0;
+  z-index: 5;
+  font-weight: 500;
+}
+.header_nav li :hover {
+  opacity: 0.2;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  top: 92%;
+  left: 0;
+  font-size: 12px;
+  color: #000;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .header_nav {
+    width: 30%;
+  }
+  .footer {
+    width: 100%;
+    top: 95%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header_nav {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header_nav {
+    width: 40%;
+    font-size: 10px;
+  }
+  .footer {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+main {
+  padding-top: 5%;
+}
+
+.page_ttl {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: lighter;
+  font-family: "Parisienne", cursive;
+  margin-bottom: 5%;
+}
+
+.inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.article_right {
+  position: relative;
+  width: 75%;
+  margin: 0 0 0 auto;
+  margin-bottom: 15%;
+}
+
+.article_left {
+  position: relative;
+  width: 75%;
+  margin: 0 auto 0 0;
+  margin-bottom: 15%;
+}
+
+.txt_right {
+  position: absolute;
+  top: 40%;
+  left: -25%;
+  font-size: 5rem;
+  font-family: serif;
+  font-weight: lighter;
+  text-shadow: 2px 2px 2px #fff;
+}
+.txt_right h3 {
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+.txt_left {
+  position: absolute;
+  top: 40%;
+  right: -25%;
+  font-size: 5rem;
+  font-family: serif;
+  font-weight: lighter;
+  text-shadow: 2px 2px 2px #fff;
+}
+.txt_left h3 {
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+.photo {
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+}
+.photo:hover {
+  opacity: 0.8;
+}
+
+.txt li {
+  position: relative;
+}
+
+.txt li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+
+.txt li.current::after,
+.txt li:hover::after {
+  transform: scale(1, 1);
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 3%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 600;
+}

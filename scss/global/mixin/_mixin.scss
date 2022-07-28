@@ -53,3 +53,10 @@
 	font-weight: 600;
 	text-align: center;
 }
+
+@mixin blogtxt{
+	font-size: 5rem;
+	font-family: serif;
+	font-weight: lighter;
+	text-shadow: 2px 2px 2px #fff;
+}

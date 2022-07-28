@@ -1,0 +1,99 @@
+@use "foundation";
+@use "global" as *;
+
+main{
+  padding-top: 5%
+}
+
+.page_ttl{
+  @include pagettl;
+}
+
+.inner{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.article_right{
+  position: relative;
+  width: 75%;
+  margin: 0 0 0 auto;
+  margin-bottom: 15%;
+}
+
+.article_left {
+  position: relative;
+  width: 75%;
+  margin: 0 auto 0 0;
+  margin-bottom: 15%;
+}
+
+.txt_right{
+  position: absolute;
+  top: 40%;
+  left: -25%;
+  @include blogtxt;
+  h3{
+    font-size: 2rem;
+    margin-top: 5%;
+  }
+}
+
+.txt_left {
+  position: absolute;
+  top: 40%;
+  right: -25%;
+  @include blogtxt;
+  h3 {
+      font-size: 2rem;
+      margin-top: 5%;
+    }
+}
+
+.photo{
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+
+// 下線アニメーション================================================
+
+.txt li{
+  position: relative;
+}
+
+.txt li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  transition: all .3s;
+  transform: scale(0, 1);
+  transform-origin: center top;
+}
+
+.txt li.current::after,
+.txt li:hover::after {
+  transform: scale(1, 1);
+}
+
+
+// footer=======================================
+.footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 3%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  font-family: $fMintyo;
+  font-weight: 600;
+}
