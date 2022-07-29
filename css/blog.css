@@ -236,10 +236,11 @@ main {
   font-weight: lighter;
   font-family: "Parisienne", cursive;
   margin-bottom: 5%;
+  font-family: "Yesteryear", cursive;
 }
 
 .inner {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -260,7 +261,7 @@ main {
 .txt_right {
   position: absolute;
   top: 40%;
-  left: -25%;
+  left: -35%;
   font-size: 5rem;
   font-family: serif;
   font-weight: lighter;
@@ -274,7 +275,7 @@ main {
 .txt_left {
   position: absolute;
   top: 40%;
-  right: -25%;
+  right: -35%;
   font-size: 5rem;
   font-family: serif;
   font-weight: lighter;
@@ -296,6 +297,7 @@ main {
 
 .txt li {
   position: relative;
+  padding-bottom: 3%;
 }
 
 .txt li::after {
@@ -326,4 +328,62 @@ main {
   color: #000;
   font-family: "Shippori Mincho", serif;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .page_ttl {
+    margin-top: 5%;
+    font-size: 5rem;
+  }
+  .txt {
+    font-size: 4rem;
+  }
+  .txt h3 {
+    font-size: 2.5rem;
+  }
+  .photo {
+    width: 100%;
+    height: 40vh;
+  }
+  .footer {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header_nav {
+    width: 40%;
+  }
+  .photo {
+    width: 100%;
+    height: 25vh;
+  }
+  .page_ttl {
+    margin-top: 5%;
+    font-size: 48px;
+  }
+  .txt {
+    font-size: 3rem;
+  }
+  .txt h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header_nav {
+    width: 50%;
+  }
+  .photo {
+    width: 100%;
+    height: 30vh;
+  }
+  .page_ttl {
+    margin-top: 5%;
+    font-size: 2.5rem;
+  }
+  .txt {
+    font-size: 2rem;
+  }
+  .txt h3 {
+    font-size: 1.5rem;
+  }
 }

@@ -1,0 +1,52 @@
+@use "foundation";
+@use "global" as *;
+
+.blog_inner{
+  width: 70%;
+}
+
+.blog_inner img{
+  width: 100%;
+  padding: 10% 0 0 15%;
+}
+
+.date{
+  margin-top: 5%;
+  font-size: 3rem;
+  font-family: serif;
+  padding-left: 15%;
+}
+
+.article_ttl{
+  padding: 2% 0 2% 15%;
+  font-size: 2rem;
+  font-family: $fMintyo;
+}
+
+.article_txt {
+  padding-left: 15%;
+  line-height: 1.5;
+}
+
+.txt_btn{
+  width: 100%;
+  display: flex;
+  margin-top: 15%;
+  margin-bottom: 10%;
+  justify-content: center;
+  font-family: serif;
+  font-weight: lighter;
+}
+
+// footer=======================================
+.footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 3%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  font-family: $fMintyo;
+  font-weight: 600;
+}
