@@ -1,47 +1,57 @@
 @use "foundation";
 @use "global" as *;
 
-body{
+html,body{
+  min-height: 100%;
   background: rgb(255, 255, 255);
   background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(246, 214, 214, 1) 25%, rgba(245, 179, 187, 1) 50%, rgba(249, 141, 165, 1) 75%, rgba(233, 155, 156, 1) 100%);
+  background-size: cover;
 }
 
 main {
-  padding-top: 5%;
-}
-
-.box_inner{
-  background-color: #fff;
-  padding: 5%
+  padding-top: 15%;
 }
 
 .page_ttl {
   @include pagettl;
-  margin-bottom: 5vh;
+  margin-bottom: 10%;
 }
 
-.form_box{
-  width: 60%;
-  height: 80vh;
+#contact{
+  width: 80%;
   margin: 0 auto;
-  padding: 5%;
+}
+
+.box_inner{
+  width: 100%;
+  background-color: #fff;
+  padding: 5% 0;
 }
 
 .contact_box {
-  width: 80%;
+  width: 85%;
   display: flex;
   align-items: center;
   margin: 0 auto;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .contact_box._area {
   align-items: baseline;
 }
 
-.contact_form_box1,
-.contact_form_box2 {
-  height: 3vh;
+.contact_form_ttl {
+  width: 20%;
+  height: 100%;
+  margin-right: 10.5%;
+  margin-left: 10%;
+  font-size: 1.5rem;
+  font-family: serif;
+  position: relative;
+}
+
+.contact_form_box {
+  height: 5vh;
   width: 50%;
   font-size: 1rem;
   border: 1px solid #B1B1B1;
@@ -50,26 +60,14 @@ main {
 
 .contact_txtarea {
   width: 50%;
-  height: 30vh;
+  height: 20vh;
   font-size: 1rem;
   padding: 10px;
   border: 1px solid #B1B1B1;
   background-color: #ECECEC;
 }
 
-.contact_form_ttl {
-  width: 20%;
-  height: 100%;
-  margin-right: 10.5%;
-  margin-left: 10%;
-  font-size: 1.2rem;
-  font-family: serif;
-  position: relative;
-}
 
-btn{
-  margin-top: 5%;
-}
 
 .contact_btn {
   width: 15%;
@@ -87,20 +85,20 @@ btn{
 
 
 .footer {
-  @include footer;
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  padding: 5% 0;
   color: #fff;
+  font-family: $fMintyo;
+  font-weight: 600;
+  text-align: center;
+  
 }
 
 // レスポンシブ===============================================
 @media screen and (max-width: 1024px) {
-  .contact_box{
-    margin-bottom: 5vh;
-  }
 
-
-  .contact_btn{
-    width: 20%;
-  }
 }
 
 
@@ -117,9 +115,14 @@ btn{
       font-size: 12px;
     }
 
-    .footer{
-      margin-top: 5%;
-    }
+  .contact_txtarea {
+    width: 50%;
+    height: 30vh;
+  }
+
+  .contact_btn {
+    font-size: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -131,15 +134,33 @@ btn{
     font-size: 32px;
   }
 
+  .contact_box{
+    display: block;
+  }
+
   .contact_form_ttl{
-    font-size: 10px;
+    font-size: 12px;
+    margin-right: 12%;
+    margin-left: 0%;
+  }
+
+  .contact_form_box {
+    height: 4vh;
+    width: 96%;
+  }
+
+  .contact_txtarea {
+    width: 90%;
+    height: 20vh;
   }
 
   .contact_btn{
-    width: 30%;
+    width: 40%;
+    font-size: 0.5rem;
   }
 
   .footer{
-  padding: 10% 0 15% 0;
+  padding: 20% 0 30% 0;
+  font-size: 10px;
   }
 }

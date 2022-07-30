@@ -121,24 +121,7 @@
   font-family: serif;
 }
 
-.top_btn_footer {
-  display: inline-block;
-  padding: 18px 60px;
-  border-radius: 30px;
-  text-decoration: none;
-  border: 0.1px solid #fff;
-  color: #fff;
-  outline: none;
-  -webkit-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
-  margin-top: 26.5%;
-  font-weight: lighter;
-  font-family: serif;
-}
-
-.top_btn:hover,
-.top_btn_footer:hover {
+.top_btn:hover {
   border-color: transparent;
   color: #fff;
   background: -webkit-gradient(linear, right top, left top, from(#3838fd), color-stop(50%, #a6a0fc), to(#dfddfc));
@@ -216,7 +199,6 @@
 }
 
 #box6 {
-  display: block;
   position: relative;
   background: url(../img/winter/fuyu.jpg);
   @include img;
@@ -267,6 +249,17 @@
     line-height: 2rem;
     font-family: $fMintyo;
   }
+}
+
+// footer=======================================
+.footer {
+  position: absolute;
+  width: 100%;
+  top: 95%;
+  font-size: 12px;
+  color: #000;
+  font-family: $fMintyo;
+  font-weight: 600;
 }
 
 
@@ -335,5 +328,9 @@
   border-radius: 30px;
   font-size: 12px;
   margin-top: 110%;
+}
+
+.footer {
+  font-size: 10px;
 }
 }

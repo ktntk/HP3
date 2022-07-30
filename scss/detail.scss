@@ -26,6 +26,7 @@
 .article_txt {
   padding-left: 15%;
   line-height: 1.5;
+  letter-spacing: 0.1rem;
 }
 
 .txt_btn{
@@ -38,15 +39,61 @@
   font-weight: lighter;
 }
 
-// footer=======================================
-.footer {
-  position: relative;
+.footer{
+  position: fixed;
   text-align: center;
-  width: 100%;
-  padding: 3%;
-  font-size: 16px;
-  font-weight: bold;
-  color: #000;
-  font-family: $fMintyo;
-  font-weight: 600;
+  margin-bottom: 5%;
+}
+
+// レスポンシブ===============================================
+@media screen and (max-width: 1024px) {
+  .footer {
+    margin-bottom: 5%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 480px) {
+  .blog_inner {
+      width: 85%;
+      margin: 0 auto;
+    }
+
+  .blog_inner img {
+    width: 100%;
+    padding: 10% 0 0 0;
+  }
+
+  .date {
+    padding-left: 0%;
+    margin-top: 15%;
+    font-size: 1.2rem;
+  }
+
+  .article_ttl {
+    padding: 3% 0 10% 0%;
+    font-size: 1rem;
+  }
+
+  .article_txt {
+    padding-left: 0%;
+    font-size: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .txt_btn {
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    font-size: 0.5rem;
+  }
+
+  .footer {
+    font-size: 8px;
+    font-weight: normal;
+  }
 }
